@@ -12,7 +12,9 @@ Fack-call is a spammer call to a phone number dirctry.
 
 
 # How to use?
-1. ` php call.php
+1. ` ./install.sh
+2. ` php call.php
+
 
 
 
