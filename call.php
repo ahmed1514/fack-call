@@ -85,7 +85,7 @@ class prankCall{
 	}
 	public function run(){
 		while(true){
-			echo "Loop ?   (y/n)			  ";
+			echo "Loop ?   (y/n)               ";
 			$loop = $this->get();
 			if($loop=="y" OR $loop=="n"){
 				break;
