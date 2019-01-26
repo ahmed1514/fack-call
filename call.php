@@ -103,15 +103,15 @@ class prankCall{
 		}
 	}
 }
-    echo  ""
-    echo -e "###################################"
-    echo    "# Copyright:  |  # Ahmed@Al-Qhoom #"
-    echo    "# Conect WhatsApp: 00967714392204 #"
-    echo    "# Created on  |      01/1/2019    #"
-    echo -e "###################################"
-    echo -e "         Example 967XXXxxxXXX      "
-    echo  ""
-    echo    " ENTER The Phone Number To Calling him : ";		";
+    echo  "";
+    echo -e "###################################";
+    echo    "# Copyright:  |  # Ahmed@Al-Qhoom #";
+    echo    "# Conect WhatsApp: 00967714392204 #";
+    echo    "# Created on  |      01/1/2019    #";
+    echo -e "###################################";
+    echo -e "         Example 967XXXxxxXXX      ";
+    echo  "";
+    echo    " ENTER The Phone Number To Calling him : ";
 $no = get();
 $n = new prankCall($no);
 $n->run();
