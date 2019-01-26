@@ -106,6 +106,7 @@ pip2 install -y requests &> /dev/null
 
 apt install -y figlet &> /dev/null
 
+
 sleep 1
 clear
 figlet "< DONE >"
