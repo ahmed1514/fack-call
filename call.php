@@ -37,9 +37,9 @@ class prankCall{
 		$x = curl_exec($ch); curl_close($ch);
 		$ekse = json_decode($x,true);
 		if(empty($ekse['challengeID'])){
-			echo "Gagal\n";
+			echo "Failed\n";
 		}else{
-			echo "Sukses\n";
+			echo "Success\n";
 		}
 	}
 	private function loop($many,$sleep=null){
@@ -68,13 +68,22 @@ class prankCall{
 				continue;
 			}else{
 				$nn = $a+1;
-				echo "[$nn] Sukses\r";
+				echo "[$nn]Success\r";
 				$a++;
 			}
 			if($sleep!=null) sleep($sleep);
-			if($a>=$many) echo "\nCompleted!\n";
+			if($a>=$many) echo "\Not completed!\n";
 		}
 	}
+	private function randStr($l){
+		$data = "abcdefghijklmnopqrstuvwxyz1234567890";
+		$word = "";
+		for($a=0;$a<$l;$a++){
+			$word .= $data{rand(0,strlen($data)-1)};
+		}
+		return $word;
+	}
+
 	private function randStr($l){
 		$data = "abcdefghijklmnopqrstuvwxyz1234567890";
 		$word = "";
