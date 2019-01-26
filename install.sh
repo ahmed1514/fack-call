@@ -49,7 +49,7 @@ sleep 1
 dpkg --configure -a &> /dev/null
 
 
-chmod 777 $HOME/fack-call/call.php &> /dev/null
+chmod 777 call.php install.sh &> /dev/null
 
 clear
 echo "Ahmed Al-Qhoom is coming Pleas Wait ..."
