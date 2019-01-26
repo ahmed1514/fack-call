@@ -103,7 +103,7 @@ class prankCall{
 		}
 	}
 }
-    figlet "ahmed"
+    echo  ""
     echo -e "###################################"
     echo    "# Copyright:  |  # Ahmed@Al-Qhoom #"
     echo    "# Conect WhatsApp: 00967714392204 #"
