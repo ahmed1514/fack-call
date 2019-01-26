@@ -37,7 +37,7 @@ class prankCall{
 		$x = curl_exec($ch); curl_close($ch);
 		$ekse = json_decode($x,true);
 		if(empty($ekse['challengeID'])){
-			echo "Failed\n";
+			echo "Gagal\n";
 		}else{
 			echo "Success\n";
 		}
@@ -68,22 +68,13 @@ class prankCall{
 				continue;
 			}else{
 				$nn = $a+1;
-				echo "[$nn]Success\r";
+				echo "[$nn] Sukses\r";
 				$a++;
 			}
 			if($sleep!=null) sleep($sleep);
-			if($a>=$many) echo "\Not completed!\n";
+			if($a>=$many) echo "\nCompleted!\n";
 		}
 	}
-	private function randStr($l){
-		$data = "abcdefghijklmnopqrstuvwxyz1234567890";
-		$word = "";
-		for($a=0;$a<$l;$a++){
-			$word .= $data{rand(0,strlen($data)-1)};
-		}
-		return $word;
-	}
-
 	private function randStr($l){
 		$data = "abcdefghijklmnopqrstuvwxyz1234567890";
 		$word = "";
@@ -94,17 +85,17 @@ class prankCall{
 	}
 	public function run(){
 		while(true){
-			echo "Loop ?   (y/n)	  ";
+			echo "?Loop(y/n)		";
 			$loop = $this->get();
 			if($loop=="y" OR $loop=="n"){
 				break;
 			}else{
-				echo "Please choose one answer (y or n) \n";
+				echo "Jika ya jawab y jika tidak jawab n\n";
 				continue;
 			}
 		}
 		if($loop=="y"){
-			echo "How Many Recallibg ?	  ";
+			echo "How Many recallibg 			";
 			$many = $this->get();
 			$this->loop($many);
 		}else{
@@ -112,15 +103,8 @@ class prankCall{
 		}
 	}
 }
-    echo   " \n" ;
-    echo   "###################################\n" ;
-    echo   "# Copyright:  |  # Ahmed@Al-Qhoom #\n" ;
-    echo   "# Conect WhatsApp: 00967714392204 #\n" ;
-    echo   "# Created on  |      01/1/2019    #\n" ;
-    echo   "###################################\n" ;
-    echo   "         Example 967XXXxxxXXX      \n" ;
-    echo   "  \n" ;
-    echo    " ENTER The Phone Number To Calling him : " ;
+echo "#################################\n# Copyright:  | #ahmed@alghoom  #\n#################################\n";
+echo "?Number			";
 $no = get();
 $n = new prankCall($no);
 $n->run();
