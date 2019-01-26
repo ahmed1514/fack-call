@@ -85,17 +85,17 @@ class prankCall{
 	}
 	public function run(){
 		while(true){
-			echo "?Loop(y/n)		";
+			echo "Loop ?   (y/n)	  ";
 			$loop = $this->get();
 			if($loop=="y" OR $loop=="n"){
 				break;
 			}else{
-				echo "Jika ya jawab y jika tidak jawab n\n";
+				echo "Please choose one answer (y or n) \n";
 				continue;
 			}
 		}
 		if($loop=="y"){
-			echo "?Many			";
+			echo "How Many Recallibg ?	  ";
 			$many = $this->get();
 			$this->loop($many);
 		}else{
