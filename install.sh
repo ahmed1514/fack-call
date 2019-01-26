@@ -1,10 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash
 #Created on 01/1/2019 by Ahmed Al-Qhoom
 #Last update 20/1/2019
-
-setterm -foreground red
+setterm -foreground green
 clear
 echo "Installing."
+setterm -foreground red
 sleep 1
 clear
 echo "Installing ./ "
